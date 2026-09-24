@@ -1,0 +1,58 @@
+research/
+
+# コメント: ログファイルをすべて無視
+*.log
+
+# 例外: このログファイルだけはGitで管理する
+# !keep-this-file.log
+
+# ビルド成果物や依存関係のディレクトリを無視
+node_modules/
+dist/
+build/
+
+# 環境変数などの機密情報ファイルを無視
+.env
+.env.local
+*.pem
+
+# OSやエディタ固有のファイルを無視
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ========================================
+# Node.js / React / Vue
+# ========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.local
+dist/
+build/
+
+# ========================================
+# Python
+# ========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+*.env
+
+# ========================================
+# macOS / Windows 共通系
+# ========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
