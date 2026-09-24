@@ -1,19 +1,23 @@
 # ai-commit
-AI による `git commit`
+AIによる `git commit`
+
+`commit` には，2つの方法があります．
+ひとつはホームディレクトリ直下に `bin` ディレクトリを作成し，パスを通す方法です．
+2つ目は，Gitエイリアスに登録する方法です．
 
 
 
 ### Pathの設定
 `.bashrc` や `.zshrc` に下記のとおりパスを設定します．
 
-```bash, zsh
+```bash
 # Path
 export PATH="$HOME/bin:$PATH"
 ```
 
 ### 使用方法
 
-```bash, zsh
+```bash
 git ai-commit
 ```
 
@@ -21,23 +25,23 @@ git ai-commit
 
 作成したPythonスクリプトをGitエイリアスとして登録します．
 
-```bash, zsh
+```bash
 git config --global alias.ai-commit '!python /path/to/commit.py'
 ```
 
 **例：**
-```bash, zsh
+```bash
 git config --global alias.ai-commit '!python ~/bin/git-ai-commit'
 ```
 
 ### Gitエイリアスの解除（削除）方法
 
-```bash, zsh
+```bash
 git config --global --unset alias.エイリアス名
 ```
 
 **例：**
-```bash, zsh
+```bash
 git config --global --unset alias.ai-commit
 ```
 
